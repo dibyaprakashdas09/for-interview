@@ -1,0 +1,38 @@
+<mat-card  color="primary">
+  <mat-card-title>
+    APPLICATION MENU
+  </mat-card-title>
+  <mat-card-content class="menu-bar">
+    <button mat-raised-button color="primary" [matMenuTriggerFor]="menu">MENU BAR</button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item  [matMenuTriggerFor]="subhome">
+      <mat-icon>home</mat-icon>
+      <span>HOME</span>
+      </button>
+      <button mat-menu-item>
+          <mat-icon>room_service</mat-icon>
+          <span>SERVICES</span>
+      </button>
+      <button mat-menu-item>
+          <mat-icon>more</mat-icon>
+          <span>PRODUCTS</span>
+      </button>
+      <button mat-menu-item>
+          <mat-icon>contacts</mat-icon>
+          <span>CONTACT</span>
+      </button>
+      
+    </mat-menu>
+    <mat-menu #subhome="matMenu">
+        <button mat-menu-item>
+            BEDROOM
+        </button>
+        <button mat-menu-item>
+            KITCHEN
+        </button>
+        <button mat-menu-item>
+            BATHROOM
+        </button>
+    </mat-menu>
+  </mat-card-content>
+  </mat-card>

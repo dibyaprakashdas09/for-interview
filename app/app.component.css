@@ -1,0 +1,17 @@
+.header
+{
+    background-color: #EEEEEE;
+    color: #6E2585;
+    text-align: center;
+}
+.menu
+{
+    float :center;
+    background-color: #6E2585;
+    color: white;
+    
+}
+.inner
+{
+    background-color: #6E2585;
+}
